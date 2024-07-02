@@ -22,13 +22,10 @@ body{
     width: 100%;
     font-size: 0.9375rem;
     font-family: 'Inter', sans-serif;
-    background-color: var(--light-black);
-}
-.bg-container {
+    background-color: var(--white);
     background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
     background-size: 600% 600%;
     animation: gradient 6s ease infinite;
-    height: 100vh;
 }
 
 @keyframes gradient {
@@ -184,4 +181,7 @@ header.scrolling li a:focus::after{
     display: block;
     position: relative;
     padding: 0.2em 0;
+}
+.landing{
+    margin-top: 130px;
 }
