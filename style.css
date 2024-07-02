@@ -16,7 +16,7 @@
     --footer-text: #D2D6DC;
 }
 body{
-
+    overflow: auto;
     line-height: 1.5;
     height: 100vh;
     width: 100%;
@@ -69,12 +69,12 @@ header{
     left: 0;
     right: 0;
     width: 100vw;
-    display: grid;
-    font-weight: 700;
+    z-index: 10;
+    display: block;
+    font-weight: 600;
     height: fit-content;
     align-items: center;
     background: transparent;
-    grid-template-columns: 33.33% 33.33% 33.33%;
     transition: all 700ms ease;
 }
 
@@ -87,13 +87,14 @@ header.scrolling{
     height: fit-content;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.45);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    background-color: var(--white);
+    /* background: rgba(255, 255, 255, 0.45); */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(13px);
     -webkit-backdrop-filter: blur(13px);
     border: 1px solid rgba(255, 255, 255, 0.51);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     transition: all 700ms ease;
 }
 header.scrolling .brand-logo{
@@ -102,7 +103,7 @@ header.scrolling .brand-logo{
     margin: 0;
 }
 header.scrolling .nav-list li a{
-    color: white;
+    color: black;
 }
 header.scrolling .nav-list li a:hover{
     color: var(--cta);
@@ -126,7 +127,25 @@ header.scrolling li a:hover::after,
 header.scrolling li a:focus::after{
     transform: scale(1);
 }
-
+header.scrolling .nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--cta);
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  header.scrolling.nav-list a:hover::after,
+  header.scrolling.nav-list a:focus::after {
+    transform: scale(1);
+  }
+  
 
 /* ---------------- Navigation Hover Effect ---------------- */
 
@@ -150,12 +169,15 @@ header.scrolling li a:focus::after{
   }
 /* ---------------- Navigation ---------------- */
 
+nav{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
 .brand-logo{
     grid-column: 1;
     display: block;
     align-items: center;
     opacity: 0;
-    /* padding: 0.625rem 0.625rem 0.313rem 0.625rem; */
 }
 .brand-logo img{
     width: 4rem;
@@ -182,6 +204,60 @@ header.scrolling li a:focus::after{
     position: relative;
     padding: 0.2em 0;
 }
+
+/* ---------------- Landing Page ---------------- */
+
 .landing{
-    margin-top: 130px;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.main-logo{
+    display: block;
+    width: 50%;
+    height: fit-content;
+    padding: 1.25rem;;
+}
+.main-logo img{
+    border-radius: 1.25rem;
+    height: 350px;
+}
+.phone-img{
+    display: block;
+    width: 50%;
+
+    padding: 1.25rem;
+}
+.landing-pg-text h1{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 2.5rem;
+}
+.landing-pg-text p{
+    color: var(--white);
+    font-weight: 200;
+    width: 80%;
+}
+.landing-pg-text a{
+    border-radius: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--cta);
+    padding: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid var(--white);
+}
+.landing-pg-text a:hover{
+    border: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 1.25rem;
+    font-weight: 600;
+    color: var(--cta);
 }
