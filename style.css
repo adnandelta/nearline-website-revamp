@@ -5,6 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 :root{
     --cta: #7732cf;
     --light-white: #f9f9f9;
@@ -17,7 +18,8 @@
 }
 html{
     scroll-behavior: smooth;
-    scroll-padding: var(--scroll-padding, 91px);
+    /* scroll-padding: var(--scroll-padding, 91px); */
+    scroll-padding: 91px;
 }
 body{
     overflow: auto;
@@ -108,8 +110,7 @@ header.scrolling .nav-list li a{
     /* color: black; */
     color: var(--white);
 }
-header.scrolling .nav-list li a:hover, 
-header.scrolling .nav-list li a:active{
+header.scrolling .nav-list li a:hover{
     color: var(--cta);
 }
 
@@ -196,7 +197,7 @@ nav{
     display: flex;
     width: 90%;
     min-height: 100vh;
-    margin-top: 10%;
+    padding-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -234,16 +235,24 @@ nav{
     font-weight: 600;
     text-decoration: none;
     background-color: white;
-    border: 2px solid var(--white);
 }
 .landing-pg-text a:hover{
-    border: 0px;
-    background: rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
     padding: 1.25rem;
     font-weight: 600;
     color: var(--cta);
 }
 
 /* ---------------- MediaQuery Landing Page ---------------- */
+
+
+/* ---------------- Features Section ---------------- */
+
+.features{
+    background-color: var(--dark-black);
+}

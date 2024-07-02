@@ -12,10 +12,11 @@ document.addEventListener("scroll", ()=>{
 
 
 // Navigation Menu Scroll Padding
-// const navigationHeight = document.querySelector('.primary-navigation').clientHeight;
-// document.documentElement.style.setProperty('--scroll-padding', navigationHeight - 1 + "px");
+const navigationHeight = document.querySelector('.primary-navigation').clientHeight;
+console.log(navigationHeight)
+document.documentElement.style.setProperty('--scroll-padding', navigationHeight + 10 + "px");
 
-// //OnScroll Active Navigation Links
+//OnScroll Active Navigation Links
 // const sections = document.querySelectorAll('section');
 // const navLinks = document.querySelectorAll('.nav-items');
 
