@@ -16,6 +16,22 @@ const navigationHeight = document.querySelector('.primary-navigation').clientHei
 console.log(navigationHeight)
 document.documentElement.style.setProperty('--scroll-padding', navigationHeight + 10 + "px");
 
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when a nav item is clicked
+    document.querySelectorAll('.nav-items').forEach(n => n.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }));
+});
+
 //OnScroll Active Navigation Links
 // const sections = document.querySelectorAll('section');
 // const navLinks = document.querySelectorAll('.nav-items');
