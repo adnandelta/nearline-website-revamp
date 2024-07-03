@@ -194,6 +194,7 @@ nav{
 /* ---------------- Landing Page ---------------- */
 
 .landing{
+    overflow: hidden;
     display: flex;
     width: 90%;
     min-height: 100vh;
@@ -248,11 +249,14 @@ nav{
     color: var(--cta);
 }
 
-/* ---------------- MediaQuery Landing Page ---------------- */
-
 
 /* ---------------- Features Section ---------------- */
 
 .features{
+    overflow: hidden;
+    min-height: 100vh;
     background-color: var(--dark-black);
 }
+
+
+/* ---------------- MediaQuery ---------------- */
