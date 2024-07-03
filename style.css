@@ -216,8 +216,9 @@ nav{
     height: 350px;
 }
 .phone-img{
-    display: block;
+    display: flex;
     width: 50%;
+    height: fit-content;
     padding: 1.25rem;
 }
 .landing-pg-text h1{
@@ -257,7 +258,6 @@ nav{
 .glowing-btn {
     position: relative;
     color: var(--glow-color);
-    
     cursor: pointer;
     padding: 0.35em 1em;
     border: 0.15em solid var(--glow-color);
@@ -342,9 +342,9 @@ nav{
   }
   
   
-  @keyframes text-flicker {
+@keyframes text-flicker {
     0% {
-      opacity: 0.1;
+      opacity: 0.5;
     }
   
     2% {
@@ -352,7 +352,7 @@ nav{
     }
   
     8% {
-      opacity: 0.1;
+      opacity: 0.5;
     }
   
     9% {
@@ -360,13 +360,13 @@ nav{
     }
   
     12% {
-      opacity: 0.1;
+      opacity: 0.5;
     }
     20% {
       opacity: 1;
     }
     25% {
-      opacity: 0.3;
+      opacity: 0.6;
     }
     30% {
       opacity: 1;
@@ -385,9 +385,9 @@ nav{
     100% {
       opacity: 0.9;
     }
-  }
+}
   
-  @keyframes border-flicker {
+@keyframes border-flicker {
     0% {
       opacity: 0.1;
     }
@@ -418,6 +418,9 @@ nav{
   .btn{
     text-decoration: none;
   }
+.get-app {
+  text-decoration: none;
+}
 
 /* ---------------- Features Section ---------------- */
 
