@@ -418,7 +418,7 @@ nav{
   .btn{
     text-decoration: none;
   }
-.get-app {
+.get-app a{
   text-decoration: none;
 }
 
@@ -511,3 +511,4 @@ h1 {
 }
 
 /* ---------------- MediaQuery ---------------- */
+
