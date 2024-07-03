@@ -21,6 +21,7 @@ html{
     /* scroll-padding: var(--scroll-padding, 91px); */
     scroll-padding: 90px;
 }
+@media (min-width: 1250px){
 body{
     margin: 0;
     padding: 0;
@@ -337,8 +338,7 @@ h1 {
         margin-bottom: 1rem;
     }
 }
-
-
+}
 /* ---------------- MediaQuery ---------------- */
 
 
