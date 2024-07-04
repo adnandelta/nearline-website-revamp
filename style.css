@@ -216,10 +216,15 @@ nav{
     height: 350px;
 }
 .phone-img{
-    display: flex;
-    width: 50%;
-    height: fit-content;
-    padding: 1.25rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 2px;
+}
+.phone-img img{
+  max-width: 100%;
+  height: auto;
+ 
 }
 .landing-pg-text h1{
     color: var(--white);
@@ -509,12 +514,54 @@ h1 {
   justify-content: center;
   background-color: var(--cta);
 }
+/*  ----------------About Section ------------------*/
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.text-content, .image-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.text-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+
 
 /* ---------------- MediaQuery ---------------- */
 
 /* Add these media queries at the end of your existing style.css file */
 
-@media (max-width: 1550px) {
+@media (max-width: 1530px) {
   .landing {
       flex-direction: column;
       align-items: center;
