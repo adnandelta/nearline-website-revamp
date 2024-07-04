@@ -33,7 +33,7 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: var(--white);
     background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
-    background-size: 600% 600%;
+    background-size: 600% 1000%;
     animation: gradient 6s ease infinite;
 }
 
@@ -517,9 +517,9 @@ h1 {
 /*  ----------------About Section ------------------*/
 
 .about {
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 40px 20px;
+  background-color: var(--white);
 }
 
 .about-container {
@@ -530,7 +530,7 @@ h1 {
 
 .text-content, .image-content {
   flex: 1;
-  padding: 20px;
+  padding: 5rem;
 }
 
 .text-content h2 {
@@ -544,7 +544,7 @@ h1 {
 }
 
 .image-content img {
-  max-width: 100%;
+  max-width: 125%;
   height: auto;
   border-radius: 8px;
 }
