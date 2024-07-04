@@ -516,16 +516,21 @@ h1 {
 }
 /*  ----------------About Section ------------------*/
 
+
 .about {
   width: 100%;
-  padding: 40px 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   background-color: var(--white);
 }
 
 .about-container {
+  height: 100vh;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  padding: 40px 20px;
+  scroll-snap-align: start;
 }
 
 .text-content, .image-content {
