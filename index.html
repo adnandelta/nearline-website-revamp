@@ -6,109 +6,158 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <title>Web Layout</title>
+    <title>Document</title>
 </head>
 <body>
-    <!-- <div class="bg-container"> -->
-        <header class="sticky-navbar">
-            <nav class="primary-navigation">
-                <div class="brand-logo">
-                    <img src="Assests/tt.png" alt="Brand Logo" class="brand-img">
+
+    <a href="#" class="go-top" id="go-top" aria-label="Go back to top"><i class="fa-solid fa-chevron-up"></i></a>
+
+    <header class="sticky-navbar">
+        <nav>
+            <div class="nav-logo">
+                <img src="/Assets/tt.png" alt="LOGO">
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#landing-pg" class="nav-items">Home</a></li>
+                    <li><a href="#features-pg" class="nav-items">Features</a></li>
+                    <li><a href="#about-pg" class="nav-items">About</a></li>
+                    <li><a href="#download-pg" class="nav-items">Download</a></li>
+                    <li><a href="#contact-pg" class="nav-items">Contact</a></li>
+                </ul>
+            </div>
+                <div class="extra-column">Test Text</div> <!-- Rename the class if used later -->
+        </nav>
+    </header>
+    <section class="landing-pg" id="landing-pg">
+        <div class="left-column">
+            <div class="landing-page-logo">
+                <img src="/Assets/mainlogo.jpg" alt="BRAND LOGO">
+            </div>
+            <div class="landing-pg-text">
+                <h2>NEAR is now onLINE</h2>
+                <br>
+                <br>
+                <br>
+                <p>
+                    Discover local businesses and exclusive promotions near you with NEARLINE, your go-to app for connecting with the best small businesses in your area.
+                </p>
+                <br>
+                <br>
+                <br>
+                <!-- <a class="get-app" href="#">GET THE APP</a> -->
+                <a class="get-app" href="#"><button class="glowing-btn"><span class="glowing-txt">GET THE APP</span></button></a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="landing-pg-img">
+                <img src="/Assets/phone.png" alt="PRODUCT IMAGE">
+            </div>
+        </div>
+    </section>
+    <section class="features-pg" id="features-pg">
+        <div class="section-headers">
+            <h1>Features</h1>
+        </div>
+        <div class="features-wrapper">
+            <div class="left-column">
+                <div class="feature">
+                    <div class="icon"><i class="fa-solid fa-table-list"></i></div>
+                    <h3>Various Categories</h3>
+                    <p>Discover a wide range of categories to explore and find what you're looking for. Our platform offers a diverse selection of options.</p>
                 </div>
-                <div class="nav-menu">
-                    <ul class="nav-list">
-                        <li><a href="#landing" class="nav-items">Home</a></li>
-                        <li><a href="#features" class="nav-items">Features</a></li>
-                        <li><a href="#about" class="nav-items">About</a></li>
-                        <li><a href="#" class="nav-items">Download</a></li>
-                        <li><a href="#" class="nav-items">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="hamburger-menu">
-                    <!-- <i class="fa fa-bars"></i> Use Font Awesome icon -->
-                </div>
-            </nav>
-        </header>
-        <!-- Remaining content -->
-        <section class="landing" id="landing">
-            <div class="main-logo">
-                <img src="./Assests/mainlogo.jpg" class="main-logo-img" alt="" srcset="">
-                <div class="landing-pg-text">
-                    <h1>NEAR is now onLINE</h1>
-                    <br>
-                    <br>
-                    <p>Discover local businesses and exclusive promotions near you with NEARLINE, your go-to app for connecting with the best small businesses in your area.
-                    </p>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- <a href="#">GET THE APP</a> -->
-                    <a class="get-app" href="https://youtu.be/dQw4w9WgXcQ-autoplay" target="_blank"><button class="glowing-btn"><span class="glowing-txt">GET THE APP</span></button></a>
-                  
+                <div class="feature">
+                    <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
+                    <h3>Convenient Setup</h3>
+                    <p>Enjoy a convenient setup process that is user-friendly and hassle-free. Get started quickly and easily with our platform.</p>
                 </div>
             </div>
-            <div class="phone-img">
-                <img src="/Assests/phone.png" alt="" srcset="">
+            <div class="center-column">
+                <img src="/Assets/app-ss1.png" alt="Finvest app screenshot">
             </div>
-        </section>
-        <section class="features" id="features">
-            <h1>App Features</span></h1>
-        
-            <div class="features-container">
-                <div class="left-features">
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-table-list"></i></div>
-                        <h3>Various Categories</h3>
-                        <p>Discover a wide range of categories to explore and find what you're looking for. Our platform offers a diverse selection of options.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-pen-to-square"></i></div>
-                        <h3>Convenient Setup</h3>
-                        <p>Enjoy a convenient setup process that is user-friendly and hassle-free. Get started quickly and easily with our platform.</p>
-                    </div>
+            <div class="right-column">
+                <div class="feature">
+                    <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3>Interactive Page</h3>
+                    <p>Experience an interactive page with intuitive gestures and seamless navigation. Interact with the content in a unique and engaging way.</p>
                 </div>
-              
-                <div class="central-feature">
-                    <img src="Assests/app-ss1.png" alt="Finvest app screenshot">
-                </div>
-              
-                <div class="right-features">
-                    <div class="feature">
-                        <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                        <h3>Interactive Page</h3>
-                        <p>Experience an interactive page with intuitive gestures and seamless navigation. Interact with the content in a unique and engaging way.</p>
-                    </div>
-                    <div class="feature">
-                        <div class="icon"><i class="fa-regular fa-face-smile"></i></div>
-                        <h3>Easy-to-use Layout</h3>
-                        <p>Experience a clean and intuitive layout that makes it easy to navigate and find what you need. Enjoy a seamless user experience.</p>
-                    </div>
+                <div class="feature">
+                    <div class="icon"><i class="fa-regular fa-face-smile"></i></div>
+                    <h3>Easy-to-use Layout</h3>
+                    <p>Experience a clean and intuitive layout that makes it easy to navigate and find what you need. Enjoy a seamless user experience.</p>
                 </div>
             </div>
-        </section>
-        <section class="about" id="about">
-            <div class="about-container">
-              <div class="text-content">
+        </div>
+    </section>
+    <section class="about-pg" id="about-pg">
+        <!-- <div class="section-headers">
+            <h1>About</h1>
+        </div> -->
+        <div class="content-one">
+            <div class="left-column">
                 <h2>About NEARLINE</h2>
-                <p>Nearline is a mobile app that helps small businesses connect with customers through marketing tools and social media integration.
-                    It offers features to attract new customers, build loyalty, and foster a community around the brand. By providing these solutions, Nearline aims to propel small businesses to success.</p>
-              </div>
-              <div class="image-content">
-                <img src="/Assests/app-ss1.png" alt="About Us Image">
-              </div>
+                <p>
+                    Nearline is a mobile app that helps small businesses connect with customers through marketing tools and social media integration. It offers features to attract new customers, build loyalty, and foster a community around the brand. By providing these solutions, Nearline aims to propel small businesses to success.
+                </p>
             </div>
-            
-            <div class="about-container">
-              <div class="image-content">
-                <img src="/Assests/app-ss2.png" alt="Another About Us Image">
-              </div>
-              <div class="text-content" style="margin-left: 5rem, width: 200%;">
+            <div class="right-column">
+                <div class="image-content">
+                    <img src="/Assets/app-ss1.png" alt="About Us Image">
+                  </div>
+            </div>
+        </div>
+        <!-- <div class="carousel-container">
+            <div class="carousel" id="carousel">
+                <div class="carousel-slide slide1">1</div>
+                <div class="carousel-slide slide2">2</div>
+                <div class="carousel-slide slide3">3</div>
+                <div class="carousel-slide slide4">4</div>
+                <div class="carousel-slide slide5">5</div>
+            </div>
+            <button class="carousel-control prev" id="prevBtn">&#9664;</button>
+            <button class="carousel-control next" id="nextBtn">&#9654;</button>
+            <div class="carousel-indicators" id="indicators">
+                <span class="indicator active" data-slide-to="1"></span>
+                <span class="indicator" data-slide-to="2"></span>
+                <span class="indicator" data-slide-to="3"></span>
+                <span class="indicator" data-slide-to="4"></span>
+                <span class="indicator" data-slide-to="5"></span>
+            </div>
+        </div> -->
+        <div class="content-two">
+            <div class="left-column">
+                <img src="/Assets/app-ss2.png" alt="Another About Us Image">
+            </div>
+            <div class="right-column">
+                <div class="icon">
+                    <i class="fa-solid fa-shop"></i>
+                </div>
                 <h2>Set up your Business seamlessly on NEARLINE Business</h2>
                 <p>Set up your business on NEARLINE easily and quickly with just a few simple steps, and you'll be live in no time, ready to reach your customers!</p>
-              </div>
             </div>
-          </section>
-    <!-- </div> -->
+        </div>
+    </section>
+    <section class="download-pg" id="download-pg">
+        <div class="section-headers">
+            <h1>Download</h1>
+        </div>
+        <div class="downloads-wrapper">
+            <div class="left-column">
+
+            </div>
+            <div class="right-column">
+
+            </div>
+        </div>
+    </section>
+    <section class="contact-pg" id="contact-pg">
+        <div class="section-headers">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="contact-wrapper">
+
+        </div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
