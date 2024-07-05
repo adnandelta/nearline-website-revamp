@@ -273,7 +273,7 @@ nav{
 /* ---------------- ---------- ---------------- */
 
 section > .section-headers h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 1000;
     padding: 1.5rem 0rem;
 }
@@ -685,7 +685,85 @@ section > .section-headers h1{
     line-height: 1.6;
 }
   
+/* ---------------- Download Section ---------------- */
 
+.download-pg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-white);
+}
+
+.download-pg h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--dark-gray);
+}
+
+.download-pg h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-gray);
+}
+
+.downloads-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; /* Adjust spacing between columns */
+  align-items: flex-start; /* Align columns at the top */
+}
+
+/* Column specific styles (optional, for further customization) */
+.left-column, .right-column {
+  flex: 1; /* Each column takes equal width */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the content of each column */
+}
+
+.download-btn {
+  display: block; /* Change to inline-flex for aligning text and icon */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 1.5rem 3rem;
+  margin: 2rem 0rem;
+  border-radius: 0.625rem;
+  background-color: var(--cta);
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-pg .download-btn i { /* Icon specific styles */
+  margin-right: 8px; /* Add some space between the icon and text */
+}
+
+.download-pg .download-btn:hover {
+  background-color: black;
+}
+
+#playstore-icon{
+  font-size: 2rem;
+}
+#apple-icon{
+  font-size: 2.5rem;
+}
+
+
+/* ---------------- Contact Section ---------------- */
+
+
+.contact-pg{
+  height: 50vh;
+}
 /* ---------------- Carousel Effect ---------------- */
 
 /* .carousel-container {
