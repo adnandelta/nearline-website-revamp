@@ -13,7 +13,7 @@
     --white: #fff;
     --gray: #888;
     --light-gray: #eee;
-    --dark-black: #081828;
+    --dark-black: #252525;
     --light-black: #666;
     --footer-text: #D2D6DC;
     --glow-color: #fff;
@@ -280,7 +280,7 @@ section > .section-headers h1{
 
 /* ---------------- Landing Section ---------------- */
 
-.landing-pg{
+.landing-section{
     margin-top: var(--nav-height, 90px);
     display: flex;
     height: 100vh;
@@ -292,7 +292,7 @@ section > .section-headers h1{
 
 /* ---------------- ---------- ---------------- */
 
-.landing-pg > .left-column{
+.landing-section > .left-column{
     flex-wrap: wrap;
     display: flex;
     width: 40%;
@@ -302,32 +302,32 @@ section > .section-headers h1{
     margin: 3.13rem 0rem;
 }
 
-.landing-pg > .left-column img{
+.landing-section > .left-column img{
     width: 75%;
     height: auto;
     border-radius: 1.25rem;
 }
 
-.landing-pg > .left-column h2{
+.landing-section > .left-column h2{
     color: var(--white);
     font-size: 2.5rem;
     font-weight: 2.5rem;
 }
 
-.landing-pg > .left-column p{
+.landing-section > .left-column p{
     color: var(--white);
     font-weight: 200;
 }
 
 /* ---------------- ---------- ---------------- */
 
-/* .landing-pg > .landing-pg-text {
+/* .landing-section > .landing-section-text {
     width: 100%;
     height: fit-content;
     color: var(--white);
 }
 
-.landing-pg > .left-column a{
+.landing-section > .left-column a{
     border-radius: 0.625rem;
     justify-content: center;
     align-items: center;
@@ -337,7 +337,7 @@ section > .section-headers h1{
     text-decoration: none;
     background-color: white;
 }
-.landing-pg > .left-column a:hover{
+.landing-section > .left-column a:hover{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -505,7 +505,7 @@ section > .section-headers h1{
 
 /* ---------------- ---------- ---------------- */
 
-.landing-pg > .right-column{
+.landing-section > .right-column{
     display: flex;
     width: 40%;
     padding: 2rem;
@@ -516,14 +516,14 @@ section > .section-headers h1{
     /* background-color: var(--light-white); */
 }
 
-.landing-pg > .right-column img{
+.landing-section > .right-column img{
     width: 120%;
     height: auto;
 }
 
 /* ---------------- Features Section ---------------- */
 
-.features-pg{
+.features-section{
     background-color: var(--light-white);
     height: fit-content;
     width: 100%;
@@ -607,7 +607,7 @@ section > .section-headers h1{
 
 /* ---------------- About Section ---------------- */
 
-.about-pg{
+.about-section{
     width: 100%;
     height: fit-content;
     padding: 2rem;
@@ -688,22 +688,50 @@ section > .section-headers h1{
   
 /* ---------------- Download Section ---------------- */
 
-.download-pg {
+.download-section {
     display: block;
-
     text-align: center;
     width: 100%;
     height: 80vh;
     background-color: var(--cta);
+    /* background-color: transparent; */
 }
 
+.test{
+    color: transparent;
+    -webkit-text-stroke: 1px var(--white);
+}
+
+/* .test {
+    background-image: 
+      linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd); 
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: move 300000ms linear infinite;
+  }
+  @keyframes move {
+      to {
+          background-position: 4500vh;
+      }
+  }
+  @media screen and (max-width:900px){
+    .test{
+      font-size:2rem;
+    }
+  }
+  @media screen and (max-width:600px){
+    .test{
+      font-size:1rem;
+    }
+  } */
 /* ---------------- ---------- ---------------- */
 
-.download-pg h1 {
+.download-section h1 {
     color: var(--white);
 }
 
-.download-pg h2 {
+.download-section h2 {
     font-size: 1.5rem;
     color: var(--white);
     margin-bottom: 2rem;
@@ -799,11 +827,11 @@ section > .section-headers h1{
 /* ---------------- Contact Section ---------------- */
 
 
-.contact-pg{
+.contact-section{
     color: #ffffff;
     background-color: #252525;
 }
-.contact-pg h1{
+.contact-section h1{
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
