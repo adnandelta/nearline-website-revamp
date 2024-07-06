@@ -273,9 +273,9 @@ nav{
 /* ---------------- ---------- ---------------- */
 
 section > .section-headers h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 1000;
-    padding: 1.5rem 0rem;
+    padding: 3rem 0rem 1.5rem 0rem;
 }
 
 /* ---------------- Landing Section ---------------- */
@@ -531,14 +531,14 @@ section > .section-headers h1{
     text-align: center  ;
     align-items: center;
     justify-content: center;
-    padding:  2rem 6% 0rem 6%;
+    padding:  0rem 6% 0rem 6%;
 }
 
 /* ---------------- ---------- ---------------- */
 
 .features-wrapper{
     display: flex;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     justify-content: space-between;
     align-items: center;
 }
@@ -657,6 +657,7 @@ section > .section-headers h1{
     padding: 3rem;
     display: flex;
     align-items: center;
+    justify-content: left;
 }
 .content-two > .left-column {
     padding: 2rem;
@@ -685,7 +686,179 @@ section > .section-headers h1{
     line-height: 1.6;
 }
   
+/* ---------------- Download Section ---------------- */
 
+.download-pg {
+    display: block;
+
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--cta);
+}
+
+/* ---------------- ---------- ---------------- */
+
+.download-pg h1 {
+    color: var(--white);
+}
+
+.download-pg h2 {
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+/* ---------------- ---------- ---------------- */
+
+.download-wrapper {
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    justify-content: space-evenly;
+}
+
+/* ---------------- ---------- ---------------- */
+    
+.download-wrapper > .left-column,
+.download-wrapper > .right-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ---------------- ---------- ---------------- */
+
+.vertical-line{
+    border-left: 1px solid var(--white);
+    height: 40vh;
+
+}
+
+/* ---------------- ---------- ---------------- */
+
+.download-btn{
+    width: 90%;
+    /* padding: 3rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+/* ---------------- ---------- ---------------- */
+
+.left-column > .download-btn a{
+    text-decoration: none;
+    color: var(--cta);
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block; 
+    margin: 2rem 0rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.625rem;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    transition: all 300ms ease;
+}
+
+.right-column > .download-btn a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block; 
+    margin: 2rem 0rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.625rem;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    transition: all 300ms ease;
+}
+
+.download-btn a:hover{
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--dark-black);
+    background-color: var(--dark-black);
+  }
+
+/* ---------------- ---------- ---------------- */
+
+#playstore-icon{
+    font-size: 1.3rem;
+    margin: 0rem 1rem;
+}
+
+#apple-icon{
+    margin: 0rem 1rem;
+    font-size: 1.8rem;
+}
+
+/* ---------------- Contact Section ---------------- */
+
+
+.contact-pg{
+    color: #ffffff;
+    background-color: #252525;
+}
+.contact-pg img{
+    width: 20rem;
+    height: auto;
+    padding: 5rem;
+    border-radius: 8px;
+}
+.footer-content {
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #999999;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.bottom-bar {
+    text-align: center;
+    color: #666666;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #1a1a1a;
+}
+
+.bottom-bar a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.bottom-bar a:hover {
+    color: #ffffff;
+}
 /* ---------------- Carousel Effect ---------------- */
 
 /* .carousel-container {
