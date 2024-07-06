@@ -803,11 +803,27 @@ section > .section-headers h1{
     color: #ffffff;
     background-color: #252525;
 }
-.contact-pg img{
-    width: 20rem;
-    height: auto;
-    padding: 5rem;
-    border-radius: 8px;
+.contact-pg h1{
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.footer-column-1{
+  margin-left: 3rem;
+}
+.footer-column-1 img{
+  width: 20rem;
+  height: auto;
+  padding: 2rem;
+  padding-top: 0;
+  border-radius: 8px;
+}
+.contact-details{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }
 .footer-content {
     display: flex;
@@ -816,7 +832,9 @@ section > .section-headers h1{
 }
 
 .footer-column {
-    flex: 1;
+  flex: 1;
+  margin-left: 5rem;
+  justify-content: space-evenly;
 }
 
 .footer-column h3 {
