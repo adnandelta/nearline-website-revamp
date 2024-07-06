@@ -275,7 +275,7 @@ nav{
 section > .section-headers h1{
     font-size: 2.5rem;
     font-weight: 1000;
-    padding: 1.5rem 0rem;
+    padding: 3rem 0rem 1.5rem 0rem;
 }
 
 /* ---------------- Landing Section ---------------- */
@@ -531,14 +531,14 @@ section > .section-headers h1{
     text-align: center  ;
     align-items: center;
     justify-content: center;
-    padding:  2rem 6% 0rem 6%;
+    padding:  0rem 6% 0rem 6%;
 }
 
 /* ---------------- ---------- ---------------- */
 
 .features-wrapper{
     display: flex;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     justify-content: space-between;
     align-items: center;
 }
@@ -689,147 +689,175 @@ section > .section-headers h1{
 /* ---------------- Download Section ---------------- */
 
 .download-pg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 80vh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--light-white);
+    display: block;
+
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--cta);
 }
 
+/* ---------------- ---------- ---------------- */
+
 .download-pg h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--dark-gray);
+    color: var(--white);
 }
 
 .download-pg h2 {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  color: var(--dark-gray);
+    font-size: 1.5rem;
+    color: var(--white);
+    margin-bottom: 2rem;
 }
 
-.downloads-wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: space-around; /* Adjust spacing between columns */
-  align-items: flex-start; /* Align columns at the top */
+/* ---------------- ---------- ---------------- */
+
+.download-wrapper {
+    display: flex;
+    margin: 2rem;
+    padding: 2rem;
+    justify-content: space-evenly;
 }
 
-/* Column specific styles (optional, for further customization) */
-
-.downloads-wrapper > .left-column,
-.downloads-wrapper > .right-column {
- 
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center-align the content of each column */
+/* ---------------- ---------- ---------------- */
+    
+.download-wrapper > .left-column,
+.download-wrapper > .right-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.download-btn {
-  display: block; /* Change to inline-flex for aligning text and icon */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  padding: 1.5rem 3rem;
-  margin: 2rem 0rem;
-  border-radius: 0.625rem;
-  background-color: var(--cta);
-  color: var(--white);
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+/* ---------------- ---------- ---------------- */
+
+.vertical-line{
+    border-left: 1px solid var(--white);
+    height: 40vh;
+
 }
 
-.download-pg .download-btn i { /* Icon specific styles */
-  margin-right: 8px; /* Add some space between the icon and text */
+/* ---------------- ---------- ---------------- */
+
+.download-btn{
+    width: 90%;
+    /* padding: 3rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
 }
 
-.download-btn a{
-  padding-bottom: 5%;
+/* ---------------- ---------- ---------------- */
+
+.left-column > .download-btn a{
+    text-decoration: none;
+    color: var(--cta);
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block; 
+    margin: 2rem 0rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.625rem;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    transition: all 300ms ease;
 }
-.download-pg .download-btn:hover {
-  background-color: black;
+
+.right-column > .download-btn a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: block; 
+    margin: 2rem 0rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.625rem;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    transition: all 300ms ease;
 }
+
+.download-btn a:hover{
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid var(--dark-black);
+    background-color: var(--dark-black);
+  }
+
+/* ---------------- ---------- ---------------- */
 
 #playstore-icon{
-  font-size: 2rem;
-   width: 32px;
-  height: 32px;
-}
-#apple-icon{
-  font-size: 2.5rem;
-  width: 32px;
-  height: 32px;
+    font-size: 1.3rem;
+    margin: 0rem 1rem;
 }
 
+#apple-icon{
+    margin: 0rem 1rem;
+    font-size: 1.8rem;
+}
 
 /* ---------------- Contact Section ---------------- */
 
 
 .contact-pg{
-  background-color: #252525;
-  color: #ffffff;
+    color: #ffffff;
+    background-color: #252525;
 }
 .contact-pg img{
-  width: 20rem;
-  height: auto;
-  padding: 5rem;
-  border-radius: 8px;
+    width: 20rem;
+    height: auto;
+    padding: 5rem;
+    border-radius: 8px;
 }
 .footer-content {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 40px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
 }
 
 .footer-column {
-  flex: 1;
+    flex: 1;
 }
 
 .footer-column h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .footer-column ul {
-  list-style-type: none;
-  padding: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 .footer-column ul li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-column ul li a {
-  color: #999999;
-  text-decoration: none;
-  font-size: 14px;
+    color: #999999;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .footer-column ul li a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .bottom-bar {
-  background-color: #1a1a1a;
-  color: #666666;
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
+    text-align: center;
+    color: #666666;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #1a1a1a;
 }
 
 .bottom-bar a {
-  color: #666666;
-  text-decoration: none;
+    color: #666666;
+    text-decoration: none;
 }
 
 .bottom-bar a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 /* ---------------- Carousel Effect ---------------- */
 
