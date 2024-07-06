@@ -657,6 +657,7 @@ section > .section-headers h1{
     padding: 3rem;
     display: flex;
     align-items: center;
+    justify-content: left;
 }
 .content-two > .left-column {
     padding: 2rem;
@@ -720,8 +721,10 @@ section > .section-headers h1{
 }
 
 /* Column specific styles (optional, for further customization) */
-.left-column, .right-column {
-  flex: 1; /* Each column takes equal width */
+
+.downloads-wrapper > .left-column,
+.downloads-wrapper > .right-column {
+ 
   display: flex;
   flex-direction: column;
   align-items: center; /* Center-align the content of each column */
@@ -746,15 +749,22 @@ section > .section-headers h1{
   margin-right: 8px; /* Add some space between the icon and text */
 }
 
+.download-btn a{
+  padding-bottom: 5%;
+}
 .download-pg .download-btn:hover {
   background-color: black;
 }
 
 #playstore-icon{
   font-size: 2rem;
+   width: 32px;
+  height: 32px;
 }
 #apple-icon{
   font-size: 2.5rem;
+  width: 32px;
+  height: 32px;
 }
 
 
@@ -762,7 +772,64 @@ section > .section-headers h1{
 
 
 .contact-pg{
-  height: 50vh;
+  background-color: #252525;
+  color: #ffffff;
+}
+.contact-pg img{
+  width: 20rem;
+  height: auto;
+  padding: 5rem;
+  border-radius: 8px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #999999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+}
+
+.bottom-bar {
+  background-color: #1a1a1a;
+  color: #666666;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.bottom-bar a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.bottom-bar a:hover {
+  color: #ffffff;
 }
 /* ---------------- Carousel Effect ---------------- */
 
