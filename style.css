@@ -886,7 +886,7 @@ section > .section-headers h1{
 }
 
 .footer-column ul li a:hover {
-    color: #ffffff;
+    color: var(--cta);
 }
 
 .bottom-bar {
@@ -903,7 +903,7 @@ section > .section-headers h1{
 }
 
 .bottom-bar a:hover {
-    color: #ffffff;
+    color: var(--cta);
 }
 /* ---------------- Carousel Effect ---------------- */
 
