@@ -33,19 +33,6 @@ body{
     background-size: 600% 600%;
     animation: gradient 6s ease infinite;
 }
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 /* ---------------- ScrollBar ---------------- */
 
 ::-webkit-scrollbar {
@@ -422,87 +409,6 @@ section > .section-headers h1{
     opacity: 1;
 }
   
-  
-@keyframes text-flicker {
-    0% {
-      opacity: 0.5;
-    }
-  
-    2% {
-      opacity: 1;
-    }
-  
-    8% {
-      opacity: 0.5;
-    }
-  
-    9% {
-      opacity: 1;
-    }
-  
-    12% {
-      opacity: 0.5;
-    }
-    20% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 0.6;
-    }
-    30% {
-      opacity: 1;
-    }
-  
-    70% {
-      opacity: 0.7;
-    }
-    72% {
-      opacity: 0.2;
-    }
-  
-    77% {
-      opacity: 0.9;
-    }
-    100% {
-      opacity: 0.9;
-    }
-}
-  
-@keyframes border-flicker {
-    0% {
-      opacity: 0.1;
-    }
-    2% {
-      opacity: 1;
-    }
-    4% {
-      opacity: 0.1;
-    }
-  
-    8% {
-      opacity: 1;
-    }
-    70% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .glowing-btn{
-      font-size: 1em;
-    }
-  }
-  
-  .btn{
-    text-decoration: none;
-  }
-.get-app a{
-  text-decoration: none;
-}
-
 /* ---------------- ---------- ---------------- */
 
 .landing-section > .right-column{
@@ -697,34 +603,11 @@ section > .section-headers h1{
     /* background-color: transparent; */
 }
 
-.test{
+.line{
     color: transparent;
     -webkit-text-stroke: 1px var(--white);
 }
 
-/* .test {
-    background-image: 
-      linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd); 
-    background-size: 600% 600%;
-    -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;  
-    animation: move 300000ms linear infinite;
-  }
-  @keyframes move {
-      to {
-          background-position: 4500vh;
-      }
-  }
-  @media screen and (max-width:900px){
-    .test{
-      font-size:2rem;
-    }
-  }
-  @media screen and (max-width:600px){
-    .test{
-      font-size:1rem;
-    }
-  } */
 /* ---------------- ---------- ---------------- */
 
 .download-section h1 {
@@ -827,42 +710,60 @@ section > .section-headers h1{
 /* ---------------- Contact Section ---------------- */
 
 
-.contact-section{
-    color: #ffffff;
+.footer-section{
+    color: var(--white);
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding: 5rem 0rem 0rem 0rem;
     background-color: #252525;
 }
-.contact-section h1{
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.footer-column-1{
-  margin-left: 3rem;
-}
-.footer-column-1 img{
-  width: 20rem;
-  height: auto;
-  padding: 2rem;
-  padding-top: 0;
-  border-radius: 8px;
-}
-.contact-details{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-}
+
 .footer-content {
     display: flex;
     padding: 40px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
+/* ---------------- ---------- ---------------- */
+
+.footer-column-one{
+    border-right: 1px solid #2e2e2e;
+    width: 20%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-column-one img{
+    width: 15rem;
+    height: auto;
+    padding: 2rem;
+    padding-top: 0;
+    border-radius: 8px;
+}
+
+.footer-column-one a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ---------------- ---------- ---------------- */
+
+.contact-details{
+    display: block;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* ---------------- ---------- ---------------- */
+
 .footer-column {
-  flex: 1;
   margin-left: 5rem;
-  justify-content: space-evenly;
+  width: 20%;
 }
 
 .footer-column h3 {
@@ -887,7 +788,9 @@ section > .section-headers h1{
 
 .footer-column ul li a:hover {
     color: var(--cta);
-}
+} 
+
+/* ---------------- ---------- ---------------- */
 
 .bottom-bar {
     text-align: center;
@@ -905,6 +808,7 @@ section > .section-headers h1{
 .bottom-bar a:hover {
     color: var(--cta);
 }
+
 /* ---------------- Carousel Effect ---------------- */
 
 /* .carousel-container {
