@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --cta: #7732cf;
+    --light-white: #f9f9f9;
+    --white: #fff;
+    --gray: #888;
+    --light-gray: #eee;
+    --dark-black: #252525;
+    --light-black: #666;
+    --footer-text: #D2D6DC;
+    --glow-color: #fff;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    position: relative;
+    scroll-padding: var(--nav-height, 90px);
+    scroll-behavior: smooth;
+}
+
+/* ---------------- For Max-Width:1024px ---------------- */
+
+@media (max-width: 1024px){
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+/* ---------------- Header ---------------- */
+
+    header{
+       height: fit-content;
+    }
+
+/* ---------------- Navigation Bar ---------------- */
+
+    nav{
+        justify-content: space-between;
+        display: block;
+    }
+    
+/* ---------------- Navigation Items ---------------- */
+
+    .nav-menu{
+        background: rgba(255, 255, 255, 0.45);
+        border-radius: 2rem;
+        backdrop-filter: blur(13px);
+        text-align: center;
+        display: none;
+        opacity: 0;
+        transition: all 300ms ease;
+    }
+
+    .nav-menu.active{
+        display: block;
+        opacity: 1;
+    }
+
+    header.scrolling .bar{
+        background-color: var(--dark-black);
+    }
+    header.scrolling .nav-menu  {
+        background-color: transparent;
+        color: black;
+    }
+/* ---------------- ---------- ---------------- */
+
+    .nav-list{
+        display: block;
+    }
+
+/* ---------------- Hamburger Menu ---------------- */
+
+    .hamburger{
+        top: 1rem;
+        right: 1rem;
+        position: fixed;
+        display: block;
+        margin: 1rem;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .extra-column{
+        display: none;
+    }
+
+/* ---------------- Landing Section ---------------- */
+
+    .landing-section{
+        margin-top: 10rem;
+        display: block;
+        width: 100%;
+        height: fit-content ;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .landing-section > .left-column{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        padding: 0 20px;
+    }
+
+    .landing-section > .left-column p{
+        padding: 0 1rem;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .landing-section > .right-column{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        /* padding: 0 20px; */
+    }
+
+    .landing-section > .right-column img{
+        width: 100%;
+        height: auto;
+        border-radius: 1.25rem;
+    }
+
+/* ---------------- Features Section ---------------- */
+
+    .features-section{
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .features-wrapper{
+        display: block;
+        overflow: hidden;
+    }
+
+
+/* ---------------- ---------- ---------------- */
+
+    .features-wrapper > .left-column{
+        width: 100%;
+        display: block;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .features-wrapper > .right-column{
+        width: 100%;
+        display: block;
+    }
+
+/* ---------------- About Section ---------------- */
+
+    .about-section{
+        overflow: hidden;
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: fit-content;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .about-section > .about-one,
+    .about-section > .about-two{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin: 0;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .about-one > .left-column{
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .about-one > .right-column{
+        padding: 0rem 2rem;
+        width: 100%;
+        display: block;
+    }
+
+    .about-one > .right-column img{
+        display: block;
+        width: 100%;
+        padding: 2rem;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .about-two > .left-column{
+        display: none;
+    }
+
+    .about-two > .right-column{
+        width: 100%;
+        padding: 0rem 2rem;
+        display: block;
+    }
+
+    .about-two > .right-column img{
+        display: block;
+        width: 100%;
+        padding: 2rem;
+    }
+
+/* ---------------- Download Section ---------------- */
+
+    .download-section{
+        display: block;
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-wrapper{
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+        margin: 0;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .download-wrapper > .left-column,
+    .download-wrapper > .right-column{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .download-wrapper > .left-column h2,
+    .download-wrapper > .right-column h2{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .vertical-line{
+        height: fit-content;
+        margin-bottom: 2rem;
+        border-left: 0px;
+        border-bottom: 1px solid var(--white);
+    }
+
+/* ---------------- ---------- ---------------- */
+
+    .download-btn{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: min-content;
+    }
+
+    .download-btn button{
+        width: 100%;
+        height: fit-content;
+    }
+
+    #playstore-icon{
+        font-size: 1.3rem;
+        margin: 0rem 1rem;
+    }
+    
+    #apple-icon{
+        font-size: 1.8rem;
+        margin: 0rem 1rem;
+    }
+    
+/* ---------------- Footer Section ---------------- */
+
+    .footer-section{
+        height: fit-content;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-content{
+        display: block;
+    }
+
+    .footer-column-one{
+        border-right: 0px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0rem 0rem 2rem 0rem;
+        border-bottom: 1px solid #2e2e2e;
+    }
+
+    .footer-column{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+}
+
+/* ---------------- For Width:1024px ---------------- */
+

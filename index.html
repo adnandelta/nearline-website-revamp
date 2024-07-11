@@ -15,10 +15,11 @@
     <a href="#" class="go-top" id="go-top" aria-label="Go back to top"><i class="fa-solid fa-chevron-up"></i></a>
 
     <header class="sticky-navbar">
-        <nav>
+        <nav class="appear">
             <div class="nav-logo">
                 <img src="/Assets/tt.png" alt="LOGO">
             </div>
+            
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#landing-section" class="nav-items">Home</a></li>
@@ -28,40 +29,44 @@
                     <li><a href="#footer-section" class="nav-items">Contact</a></li>
                 </ul>
             </div>
-                <div class="extra-column">Test Text</div> <!-- Rename the class if used later -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="extra-column">Test Text</div> <!-- Rename the class if used later -->
         </nav>
     </header>
     <section class="landing-section" id="landing-section">
-        <div class="left-column">
+        <div class="left-column appear">
             <div class="landing-page-logo">
                 <img src="/Assets/mainlogo.jpg" alt="BRAND LOGO">
             </div>
             <div class="landing-section-text">
                 <h2>NEAR is now onLINE</h2>
                 <br>
-                <br>
-                <br>
                 <p>
                     Discover local businesses and exclusive promotions near you with NEARLINE, your go-to app for connecting with the best small businesses in your area.
                 </p>
                 <br>
                 <br>
-                <br>
-                <!-- <a class="get-app" href="#">GET THE APP</a> -->
-                <a class="get-app" href="#download-section"><button class="glowing-btn"><span class="glowing-txt">GET THE APP</span></button></a>
+                <div class="get-app">
+                    <!-- <a class="get-app" href="#">GET THE APP</a> -->
+                    <a href="#download-section"><button class="glowing-btn"><span class="glowing-txt">GET THE APP</span></button></a>
+                </div>
             </div>
         </div>
-        <div class="right-column">
+        <div class="right-column appear">
             <div class="landing-section-img">
                 <img src="/Assets/phone.png" alt="PRODUCT IMAGE">
             </div>
         </div>
     </section>
     <section class="features-section" id="features-section">
-        <div class="section-headers">
+        <div class="section-headers appear">
             <h1>Features</h1>
         </div>
-        <div class="features-wrapper">
+        <div class="features-wrapper appear">
             <div class="left-column">
                 <div class="feature">
                     <div class="icon"><i class="fa-solid fa-table-list"></i></div>
@@ -74,10 +79,10 @@
                     <p>Enjoy a convenient setup process that is user-friendly and hassle-free. Get started quickly and easily with our platform.</p>
                 </div>
             </div>
-            <div class="center-column">
+            <div class="center-column appear">
                 <img src="/Assets/app-ss1.png" alt="Finvest app screenshot">
             </div>
-            <div class="right-column">
+            <div class="right-column appear">
                 <div class="feature">
                     <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
                     <h3>Interactive Page</h3>
@@ -95,7 +100,7 @@
         <!-- <div class="section-headers">
             <h1>About</h1>
         </div> -->
-        <div class="content-one">
+        <div class="about-one appear">
             <div class="left-column">
                 <h2>What is NEARLINE?</h2>
                 <p>
@@ -108,25 +113,7 @@
                   </div>
             </div>
         </div>
-        <!-- <div class="carousel-container">
-            <div class="carousel" id="carousel">
-                <div class="carousel-slide slide1">1</div>
-                <div class="carousel-slide slide2">2</div>
-                <div class="carousel-slide slide3">3</div>
-                <div class="carousel-slide slide4">4</div>
-                <div class="carousel-slide slide5">5</div>
-            </div>
-            <button class="carousel-control prev" id="prevBtn">&#9664;</button>
-            <button class="carousel-control next" id="nextBtn">&#9654;</button>
-            <div class="carousel-indicators" id="indicators">
-                <span class="indicator active" data-slide-to="1"></span>
-                <span class="indicator" data-slide-to="2"></span>
-                <span class="indicator" data-slide-to="3"></span>
-                <span class="indicator" data-slide-to="4"></span>
-                <span class="indicator" data-slide-to="5"></span>
-            </div>
-        </div> -->
-        <div class="content-two">
+        <div class="about-two appear">
             <div class="left-column">
                 <img src="/Assets/app-ss2.png" alt="Another About Us Image">
             </div>
@@ -136,20 +123,21 @@
                 </div>
                 <h2>Set up your Business seamlessly on NEARLINE Business</h2>
                 <p>Set up your business on NEARLINE easily and quickly with just a few simple steps, and you'll be live in no time, ready to reach your customers!</p>
+                <img src="/Assets/app-ss2.png" alt="Another About Us Image">
             </div>
         </div>
     </section>
     <section class="download-section" id="download-section">
-        <div class="section-headers">
-            <h1>Install NEAR<span class="line">LINE</span> and get started</h1>
+        <div class="section-headers appear">
+            <h1>Install NEARLINE and get started</h1>
         </div>
-        <div class="download-wrapper">
+        <div class="download-wrapper appear">
             <!-- Consumer Downloads -->
             <div class="left-column">
                 <h2>FOR CONSUMERS</h2>
                 <div class="download-btn">
                     <a href="link-to-android-app" class="download-btn-android"><i class="fa-brands fa-google-play" id="playstore-icon"></i>Download for Android</a>
-                    <a href="link-to-ios-app" class="download-btn-ios"><i class="fab fa-apple" id="apple-icon"></i>Download for IPhone</a>
+                    <a href="link-to-ios-app" class="download-btn-ios"><i class="fab fa-apple" id="apple-icon"></i>Web App for IOS</a>
                 </div>
             </div>
             <div class="vertical-line"></div>
@@ -158,14 +146,14 @@
                 <h2>FOR BUSINESSES</h2>
                 <div class="download-btn">
                     <a href="link-to-android-app" class="download-btn-android"><i class="fa-brands fa-google-play" id="playstore-icon"></i>Download for Android</a>
-                    <a href="link-to-ios-app" class="download-btn-ios"><i class="fab fa-apple" id="apple-icon"></i>Download for IPhone</a>
+                    <a href="link-to-ios-app" class="download-btn-ios"><i class="fab fa-apple" id="apple-icon"></i>Web App for IOS</a>
                 </div>
             </div>
         </div>
     </section>
     
     <footer class="footer-section" id="footer-section">
-        <div class="footer-content">
+        <div class="footer-content appear">
             <div class="footer-column-one">
                 <img src="/Assets/tt.png" alt="Logo">
                 <div class="contact-details">

@@ -1,7 +1,9 @@
 // Navigation Menu Height
 const navigationHeight = document.querySelector('header.sticky-navbar').clientHeight;
 console.log(navigationHeight)
-document.documentElement.style.setProperty('--nav-height', navigationHeight + "px");
+document.documentElement.style.setProperty('--nav-height', navigationHeight - 10 + "px");
+
+
 
 //Persistent Navigation Bar
 const stickyNavbar = document.querySelector('header.sticky-navbar');
@@ -14,6 +16,25 @@ document.addEventListener("scroll", ()=>{
         stickyNavbar.classList.remove("scrolling");
     }
 })
+
+
+//Section Fade In
+
+const items = document.querySelectorAll('.appear');
+
+const active = function(entries){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+        entry.target.classList.add('inview2'); 
+        }else{
+            entry.target.classList.remove('inview2'); 
+        }
+    });
+}
+const io2 = new IntersectionObserver(active);
+ for(let i=0; i < items.length; i++){
+    io2.observe(items[i]);
+ }
 
 // Go-to Top Button
 let mybutton = document.getElementById("go-top");
@@ -35,51 +56,24 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// ---------------- Carousel Effect ----------------//
 
-// const carousel = document.getElementById('carousel');
-// const prevBtn = document.getElementById('prevBtn');
-// const nextBtn = document.getElementById('nextBtn');
-// const indicators = document.querySelectorAll('.indicator');
-// let index = 0;
-// const slides = document.querySelectorAll('.carousel-slide');
-// const totalSlides = slides.length;
+// Hamburger Menu Functionality
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-// const updateIndicators = () => {
-//     indicators.forEach((indicator, i) => {
-//         indicator.classList.toggle('active', i === index);
-//     });
-// };
+hamburger.addEventListener("click", mobileMenu);
 
-// const moveToSlide = (slideIndex) => {
-//     carousel.style.transform = `translateX(${-100 * slideIndex}%)`;
-//     index = slideIndex;
-//     updateIndicators();
-// };
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
-// const moveToNextSlide = () => {
-//     if (index < totalSlides - 1) {
-//         moveToSlide(index + 1);
-//     } else {
-//         moveToSlide(0);
-//     }
-// };
+// Hamburger Menu Close Functionality
+const navLink = document.querySelectorAll(".nav-items");
 
-// const moveToPrevSlide = () => {
-//     if (index > 0) {
-//         moveToSlide(index - 1);
-//     } else {
-//         moveToSlide(totalSlides - 1);
-//     }
-// };
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-// nextBtn.addEventListener('click', moveToNextSlide);
-// prevBtn.addEventListener('click', moveToPrevSlide);
-
-// indicators.forEach((indicator, i) => {
-//     indicator.addEventListener('click', () => {
-//         moveToSlide(i);
-//     });
-// });
-
-// setInterval(moveToNextSlide, 3000);
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
