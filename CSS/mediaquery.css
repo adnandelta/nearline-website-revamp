@@ -519,7 +519,7 @@ body{
     .about-one > .right-column img{
         display: block;
         width: 100%;
-        padding: 2rem;
+        padding: 5rem;
     }
 
 /* ---------------- ---------- ---------------- */
@@ -537,7 +537,7 @@ body{
     .about-two > .right-column img{
         display: block;
         width: 100%;
-        padding: 2rem;
+        padding: 8rem;
     }
 
 /* ---------------- Download Section ---------------- */
