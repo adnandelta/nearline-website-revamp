@@ -24,7 +24,7 @@ body{
     scroll-padding: var(--res-nav-height, 90px);
 }
 
-/* ---------------- For Max-Width:1024px ---------------- */
+/* ---------------- For Max-Width:768px ---------------- */
 
 @media (min-width: 320px) and (max-width: 768px){
 
