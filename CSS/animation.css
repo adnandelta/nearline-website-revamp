@@ -12,6 +12,47 @@
     }
 }
 
+/* ---------------- Section Fade-In ---------------- */
+
+.appear {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.appear.inview2 {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.appear.inview2:nth-child(1) {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.appear.inview2:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.appear.inview2:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.appear.inview2:nth-child(4) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.appear.inview2:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
 /* ---------------- Glowing Button ---------------- */
 
 @keyframes text-flicker {
@@ -80,16 +121,3 @@
       opacity: 1;
     }
   }
-  
-  @media only screen and (max-width: 600px) {
-    .glowing-btn{
-      font-size: 1em;
-    }
-  }
-  
-  .btn{
-    text-decoration: none;
-  }
-.get-app a{
-  text-decoration: none;
-}

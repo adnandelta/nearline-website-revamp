@@ -2,7 +2,7 @@
 const navigationHeight = document.querySelector('header.sticky-navbar').clientHeight;
 console.log(navigationHeight)
 document.documentElement.style.setProperty('--nav-height', navigationHeight + "px");
-document.documentElement.style.setProperty('--res-nav-height', navigationHeight - 50 + "px");
+document.documentElement.style.setProperty('--res-nav-height', navigationHeight + "px");
 
 
 
@@ -21,7 +21,6 @@ document.addEventListener("scroll", ()=>{
 
 
 //Section Fade In
-
 const items = document.querySelectorAll('.appear');
 
 const active = function(entries){
