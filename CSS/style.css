@@ -245,6 +245,8 @@ nav{
     background-color: var(--white);
 }
 
+/* ---------------- ---------- ---------------- */
+
 .extra-column{
     /* grid-column: 3; */ /* Navigation Item Assigned to Column 3 of 3 */
     display: block;

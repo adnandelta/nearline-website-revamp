@@ -45,6 +45,28 @@ body{
         display: block;
     }
     
+/* ---------------- Hamburger Menu ---------------- */
+
+    .hamburger{
+        top: 1rem;
+        right: 1rem;
+        position: fixed;
+        display: block;
+        margin: 1rem;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 /* ---------------- Navigation Items ---------------- */
 
     .nav-menu{
@@ -73,28 +95,6 @@ body{
 
     .nav-list{
         display: block;
-    }
-
-/* ---------------- Hamburger Menu ---------------- */
-
-    .hamburger{
-        top: 1rem;
-        right: 1rem;
-        position: fixed;
-        display: block;
-        margin: 1rem;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
     }
 
 /* ---------------- ---------- ---------------- */
