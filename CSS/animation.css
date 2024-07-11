@@ -16,6 +16,10 @@
 
 .appear {
   -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  animation: all 0.8s;
   transition: all 0.8s;
   opacity: 0;
   -webkit-transform: translateY(20px);
