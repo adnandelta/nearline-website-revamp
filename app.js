@@ -1,7 +1,9 @@
 // Navigation Menu Height
 const navigationHeight = document.querySelector('header.sticky-navbar').clientHeight;
 console.log(navigationHeight)
-document.documentElement.style.setProperty('--nav-height', navigationHeight - 10 + "px");
+document.documentElement.style.setProperty('--nav-height', navigationHeight + "px");
+document.documentElement.style.setProperty('--res-nav-height', navigationHeight - 50 + "px");
+
 
 
 

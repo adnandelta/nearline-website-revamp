@@ -18,10 +18,7 @@
     --footer-text: #D2D6DC;
     --glow-color: #fff;
 }
-@media (min-width: 1025px) and (max-width: 2048px){
 
-    
-}
 body{
     scroll-padding: var(--nav-height, 90px);
     overflow: auto;
@@ -671,7 +668,6 @@ section > .section-headers h1{
 .vertical-line{
     border-left: 1px solid var(--white);
     height: 40vh;
-
 }
 
 /* ---------------- ---------- ---------------- */
