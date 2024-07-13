@@ -32,6 +32,11 @@ body{
         display: none;
     }
 
+    .go-top{
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+
 /* ---------------- Header ---------------- */
 
     header{
