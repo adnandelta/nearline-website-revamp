@@ -50,14 +50,14 @@ h1{
     background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
     -webkit-background-clip: text;
     -webkit-background-size: 600% 600%;
-    animation: gradient1 6s ease infinite;
+    animation: gradient-txt 6s ease infinite;
     color: transparent;
     font-size: 10rem;
     font-weight: 800;
     -webkit-text-stroke: 0.5px var(--dark-black);
 }
 
-@keyframes gradient1 {
+@keyframes gradient-txt {
     0% {
         background-position: 0% 50%;
     }
@@ -66,5 +66,23 @@ h1{
     }
     100% {
         background-position: 0% 50%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+    body{
+        overflow: hidden;
+    }
+    .txt{
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        /* width: 100%; */
+        font-size: 4rem;
     }
 }
