@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    scroll-padding: var(--nav-height, 90px);
 }
 
 :root{
@@ -19,8 +18,9 @@
     --glow-color: #fff;
 }
 
+/* ---------------- ---------- ---------------- */
+
 body{
-    scroll-padding: var(--nav-height, 90px);
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -32,6 +32,8 @@ body{
     
 }
 
+/* ---------------- ---------- ---------------- */
+
 .txt{
     display: flex;
     justify-content: center;
@@ -42,20 +44,21 @@ body{
     background-color: var(--dark-black);
 }
 
+/* ---------------- ---------- ---------------- */
+
 h1{
     padding: 20rem;
-    border-radius: 3rem;
-    /* border: 1px solid --; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
-    background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
-    -webkit-background-clip: text;
-    -webkit-background-size: 600% 600%;
-    animation: gradient-txt 6s ease infinite;
-    color: transparent;
     font-size: 10rem;
     font-weight: 800;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 600% 600%;
     -webkit-text-stroke: 0.5px var(--dark-black);
+    background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    animation: gradient-txt 6s ease infinite;
 }
+
+/* ---------------- ---------- ---------------- */
 
 @keyframes gradient-txt {
     0% {
@@ -69,10 +72,13 @@ h1{
     }
 }
 
+/* ---------------- ---------- ---------------- */
+
 @media (min-width: 320px) and (max-width: 1024px){
     body{
         overflow: hidden;
     }
+
     .txt{
         overflow: hidden;
         width: 100%;
@@ -82,7 +88,8 @@ h1{
         justify-content: center;
     }
     h1{
-        /* width: 100%; */
         font-size: 4rem;
     }
 }
+
+/* ---------------- ---------- ---------------- */
