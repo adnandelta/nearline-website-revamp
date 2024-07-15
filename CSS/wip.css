@@ -51,10 +51,10 @@ h1{
     font-size: 10rem;
     font-weight: 800;
     color: transparent;
-    -webkit-background-clip: text;
-    -webkit-background-size: 600% 600%;
     -webkit-text-stroke: 0.5px var(--dark-black);
     background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    -webkit-background-clip: text;
+    -webkit-background-size: 600% 600%;
     animation: gradient-txt 6s ease infinite;
 }
 
