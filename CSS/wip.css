@@ -50,13 +50,13 @@ h1{
     padding: 20rem;
     font-size: 10rem;
     font-weight: 800;
-    color: transparent;
     -webkit-text-stroke: 0.5px var(--dark-black);
     background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
-    background-clip: text;
-    background-size: 600% 600%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-background-size: 600% 600%;
+    background-size: 600% 600%;
+    color: transparent;
     animation: gradient-txt 6s ease infinite;
 }
 
