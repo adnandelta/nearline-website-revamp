@@ -1,10 +1,7 @@
-// Navigation Menu Height
+// Navigation Menu Height Scrolling
 const navigationHeight = document.querySelector('header.sticky-navbar').clientHeight;
 console.log(navigationHeight)
 document.documentElement.style.setProperty('--nav-height', navigationHeight + "px");
-document.documentElement.style.setProperty('--res-nav-height', navigationHeight + "px");
-
-
 
 
 //Persistent Navigation Bar
@@ -33,9 +30,10 @@ const active = function(entries){
     });
 }
 const io2 = new IntersectionObserver(active);
- for(let i=0; i < items.length; i++){
-    io2.observe(items[i]);
- }
+for(let i=0; i < items.length; i++){
+  io2.observe(items[i]);
+}
+
 
 // Go-to Top Button
 let mybutton = document.getElementById("go-top");
@@ -50,6 +48,7 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

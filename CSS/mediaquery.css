@@ -21,7 +21,7 @@ body{
     position: relative;
     position: relative;
     scroll-behavior: smooth;
-    scroll-padding: var(--res-nav-height, 90px);
+    scroll-padding: 90px;
 }
 
 /* ---------------- For Max-Width:768px ---------------- */
@@ -33,8 +33,8 @@ body{
     }
 
     .go-top{
-        bottom: 1.5rem;
-        right: 1.5rem;
+        bottom: 1.6rem;
+        right: 1.6rem;
     }
 
 /* ---------------- Header ---------------- */
