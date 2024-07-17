@@ -902,6 +902,7 @@ section > .section-headers h1{
 }
 
 .social-txt h3{
+    border: 0px;
     text-decoration: none;
     line-height: 0;
     /* font-size: 0.8rem; */
