@@ -895,7 +895,7 @@ section > .section-headers h1{
 }
 
 .social-icon {
-    background-color: #2a2a2a;
+    background-color: transparent;
     padding: 10px;
     border-radius: 5px;
 }
@@ -905,12 +905,14 @@ section > .section-headers h1{
     display: flex;
     align-items: center;
     justify-content:  space-around;
+    text-decoration: none;
 }
 
 
 .bi{
     font-size: 3rem;
     padding: 2px;
+    color: white;
 }
 
 .social-icon div div {
