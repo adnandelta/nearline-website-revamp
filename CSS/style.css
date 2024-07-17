@@ -22,6 +22,7 @@
 p{
     text-align: justify;
 }
+
 body{
     scroll-padding: var(--nav-height, 90px);
     overflow: auto;
@@ -61,10 +62,7 @@ body{
 /* ---------------- ---------- ---------------- */
 
 .nearline{
-    /* padding: 20rem; */
-    /* font-size: 10rem; */
-    /* font-weight: 800; */
-    -webkit-text-stroke: 0.5px var(--dark-black);
+    font-weight: 700;
     background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
     -webkit-background-clip: text;
     background-clip: text;
@@ -553,7 +551,12 @@ section > .section-headers h1{
     align-items: center;
     border-radius: 0.4rem;
     justify-content: center;
-    background-color: var(--cta);
+    /* background-color: var(--cta); */
+    background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    -webkit-background-size: 600% 600%;
+    background-size: 600% 600%;
+    color: white;
+    animation: nearline-txt 6s ease infinite;
 }
 
 /* ---------------- About Section ---------------- */
@@ -778,7 +781,7 @@ section > .section-headers h1{
 /* ---------------- ---------- ---------------- */
 
 .footer-column-one{
-    border-right: 1px solid #2e2e2e;
+    /* border-right: 1px solid #2e2e2e; */
     width: 20%;
     display: block;
     text-align: center;
