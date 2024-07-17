@@ -19,6 +19,9 @@
     --glow-color: #fff;
 }
 
+p{
+    text-align: justify;
+}
 body{
     scroll-padding: var(--nav-height, 90px);
     overflow: auto;
@@ -54,6 +57,23 @@ body{
     border: 2px solid white;
     border-radius: 10px;
 }
+
+/* ---------------- ---------- ---------------- */
+
+.nearline{
+    /* padding: 20rem; */
+    /* font-size: 10rem; */
+    /* font-weight: 800; */
+    -webkit-text-stroke: 0.5px var(--dark-black);
+    background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-size: 600% 600%;
+    background-size: 600% 600%;
+    color: transparent;
+    animation: nearline-txt 6s ease infinite;
+}
+
 
 /* ---------------- Go-To Top ---------------- */
 
@@ -309,7 +329,7 @@ section > .section-headers h1{
 }
 
 .landing-section > .left-column img{
-    width: 75%;
+    width: 77%;
     height: auto;
     border-radius: 1.25rem;
 }
