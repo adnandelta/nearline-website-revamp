@@ -40,7 +40,7 @@ body{
 /* ---------------- ScrollBar ---------------- */
 
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 5px;
     height: 2px;
 }
 
@@ -83,13 +83,17 @@ body{
     width: 45px;
     height: 45px;
     color: var(--white);
-    background: var(--cta);
+    background-color: var(--cta);
     text-decoration: none;
     display: none;
     justify-content: center;
     align-items: center;
     /* border: 1px solid var(--white); */
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+    /* background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    -webkit-background-size: 600% 600%;
+    background-size: 600% 600%;
+    animation: gradient-txt 6s ease infinite; */
+    /* box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4); */
     -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
@@ -923,13 +927,8 @@ section > .section-headers h1{
     background-color: #1a1a1a;
 }
 
-.bottom-bar a {
-    color: #666666;
-    text-decoration: none;
+.bottom-bar p{
+    color: var(--white);
+    text-align: center;
 }
-
-.bottom-bar a:hover {
-    color: var(--cta);
-}
-
 /* ---------------- ---------- ---------------- */
