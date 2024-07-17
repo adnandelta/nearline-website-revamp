@@ -647,7 +647,7 @@ section > .section-headers h1{
     display: block;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-color: var(--cta);
     /* background-color: transparent; */
 }
@@ -766,12 +766,12 @@ section > .section-headers h1{
     width: 100%;
     height: fit-content;
     padding: 5rem 0rem 0rem 0rem;
-    background-color: #252525;
+    background-color: #1a1a1a;
 }
 
 .footer-content {
     display: flex;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     justify-content: space-between;
 }
 
@@ -787,9 +787,9 @@ section > .section-headers h1{
 }
 
 .footer-column-one img{
-    width: 15rem;
+    width: 12rem;
     height: auto;
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     padding-top: 0;
     border-radius: 8px;
 }
@@ -797,6 +797,15 @@ section > .section-headers h1{
 .footer-column-one a{
     text-decoration: none;
     color: var(--white);
+}
+
+.footer-column-one a:hover{
+    text-decoration: none;
+    color: var(--cta);
+}
+
+.footer-column-one p{
+    text-align: center;
 }
 
 /* ---------------- ---------- ---------------- */
@@ -814,9 +823,17 @@ section > .section-headers h1{
 .footer-column {
   margin-left: 5rem;
   width: 20%;
+  /* background-color: #1a1a1a; */
+}
+
+.footer-column p{
+    font-size: 1.2rem;
+    font-weight: 10;
 }
 
 .footer-column h3 {
+    border-bottom: 1px solid #2e2e2e;
+    padding-bottom: 0.5rem;
     font-size: 18px;
     margin-bottom: 20px;
 }
@@ -831,7 +848,7 @@ section > .section-headers h1{
 }
 
 .footer-column ul li a {
-    color: #999999;
+    color: var(--white);
     font-size: 14px;
     text-decoration: none;
 }
@@ -839,6 +856,58 @@ section > .section-headers h1{
 .footer-column ul li a:hover {
     color: var(--cta);
 } 
+
+/* ---------------- ---------- ---------------- */
+
+.social{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.social a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+    padding: 0rem 1rem 0rem 0rem;
+    color: var(--white);
+    /* background-color: aliceblue; */
+}   
+
+.social div:nth-child(3),
+.social div:nth-child(4){
+    margin-top: 1rem;
+}
+
+.social a:hover{
+    text-decoration: none;
+    color: var(--cta);
+}   
+
+.bi{
+    display: block;
+    /* margin: 1rem; */
+    font-size: 2.5rem;
+}
+
+.social-txt{
+    margin: 1.25rem 0rem 0rem 1rem;
+    position: relative;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1px;
+}
+
+.social-txt h3{
+    text-decoration: none;
+    line-height: 0;
+    /* font-size: 0.8rem; */
+}
+
+.social-txt p{
+    line-height: 0;
+    font-size: 0.8rem;
+}
 
 /* ---------------- ---------- ---------------- */
 
