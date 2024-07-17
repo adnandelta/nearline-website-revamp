@@ -22,6 +22,11 @@
 p{
     text-align: justify;
 }
+
+i{
+    text-decoration: none;
+    text-align: center;
+}
 body{
     scroll-padding: var(--nav-height, 90px);
     overflow: auto;
@@ -61,10 +66,7 @@ body{
 /* ---------------- ---------- ---------------- */
 
 .nearline{
-    /* padding: 20rem; */
-    /* font-size: 10rem; */
-    /* font-weight: 800; */
-    -webkit-text-stroke: 0.5px var(--dark-black);
+    font-weight: 700;
     background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
     -webkit-background-clip: text;
     background-clip: text;
@@ -770,6 +772,7 @@ section > .section-headers h1{
 }
 
 .footer-content {
+    /* border-top: 1px solid var(--white); */
     display: flex;
     padding: 40px;
     justify-content: space-between;
@@ -811,7 +814,17 @@ section > .section-headers h1{
 
 /* ---------------- ---------- ---------------- */
 
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    width: 100%;
+    height: fit-content;
+    color: black;
+}
+
 .footer-column {
+    flex-wrap: wrap;
   margin-left: 5rem;
   width: 20%;
 }

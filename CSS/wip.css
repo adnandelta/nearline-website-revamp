@@ -50,7 +50,7 @@ h1{
     padding: 20rem;
     font-size: 10rem;
     font-weight: 800;
-    -webkit-text-stroke: 0.5px var(--dark-black);
+    /* -webkit-text-stroke: 0.5px var(--dark-black); */
     background-image: var(--light-white);background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
     -webkit-background-clip: text;
     background-clip: text;
