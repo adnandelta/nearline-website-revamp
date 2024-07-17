@@ -898,6 +898,7 @@ section > .section-headers h1{
     background-color: transparent;
     padding: 10px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .social-icon > a,
@@ -905,9 +906,10 @@ section > .section-headers h1{
     display: flex;
     align-items: center;
     justify-content:  space-around;
-    text-decoration: none;
 }
-
+.social-icon a:active{
+    text-decoration: none ;
+}
 
 .bi{
     font-size: 3rem;
@@ -931,6 +933,9 @@ section > .section-headers h1{
     font-size: 12px;
     margin: 0;
     color: #cccccc;
+}
+.social-icons a:hover {
+    color: var(--cta);
 }
 
 .footer-column h3 {
