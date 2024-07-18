@@ -1,101 +1,120 @@
-:root {
+/* :root {
     --primary-color: #010712;
     --secondary-color: #818386;
-    --bg-color: #FCFDFD;
-    --button-color: #3B3636;
-    --h1-color: #3F444C;
-  }
-  
-  [data-theme="dark"] {
-    --primary-color: #FCFDFD;
+    --bg-color: #fcfdfd;
+    --button-color: #c600d0;
+    --h1-color: #3f444c;
+} */
+
+:root {
+    --primary-color: #fcfdfd;
     --secondary-color: #818386;
     --bg-color: #010712;
-    --button-color: #818386;
-    --h1-color: #FCFDFD;
-  }
-  
-  * {
+    --button-color: #c600d0;
+    --h1-color: #fcfdfd;
+}
+
+* {
     margin: 0;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .contact-container {
+    font-size: 1.1rem;
+}
+
+.contact-container {
     display: flex;
     width: 100vw;
     height: 100vh;
     background: var(--bg-color);
-  }
-  
-  .left-col {
+}
+
+.left-col {
     width: 45vw;
     height: 100%;
-    background-image: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .logo {
+    background-color: var(--light-white);
+    background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    background-size: 600% 600%;
+    animation: gradient 6s ease infinite;
+}
+
+.logo {
+    display: block;
+    border-radius: 2rem;
     width: 10rem;
     padding: 1.5rem;
-  }
-  
-  .right-col {
+}
+
+.wireframe{
+    bottom: 0;
+}
+
+.right-col {
     background: var(--bg-color);
     width: 50vw;
     height: 100vh;
     padding: 5rem 3.5rem;
-  }
-  
-  h1, label, button, .description {
-    font-family: 'Jost', sans-serif;
+}
+
+h1,
+label,
+button,
+.description {
+    font-family: "Jost", sans-serif;
     font-weight: 400;
     letter-spacing: 0.1rem;
-  }
-  
-  h1 {
-    color:var(--h1-color);
+}
+
+h1 {
+    color: var(--h1-color);
     text-transform: uppercase;
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
     font-weight: 300;
-  }
-  
-  p {
+}
+
+p {
     color: var(--secondary-color);
     font-size: 0.9rem;
     letter-spacing: 0.01rem;
     width: 40vw;
     margin: 0.25rem 0;
-  }
-  
-  label, .description {
+}
+
+label,
+.description {
     color: var(--secondary-color);
     text-transform: uppercase;
     font-size: 0.625rem;
-  }
-  
-  form {
+}
+
+form {
     width: 31.25rem;
     position: relative;
     margin-top: 2rem;
     padding: 1rem 0;
-  }
-  
-  input, textarea, label {
+}
+
+input,
+textarea,
+label {
     width: 40vw;
     display: block;
-  }
-  
-  p, placeholder, input, textarea {
-    font-family: 'Helvetica Neue', sans-serif;
-  }
-  
-  input::placeholder, textarea::placeholder {
+}
+
+p,
+placeholder,
+input,
+textarea {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
     color: var(--primary-color);
-  }
-  
-  input, textarea {
+}
+
+input,
+textarea {
     color: var(--primary-color);
     font-weight: 500;
     background: var(--bg-color);
@@ -104,36 +123,47 @@
     padding: 0.5rem 0;
     margin-bottom: 1rem;
     outline: none;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: none;
-  }
-  
-  button {
-    text-transform: uppercase;
-    font-weight: 300;
-    background: var(--button-color);
+}
+
+button {
+    margin-top: 1rem;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    background: white;
+    /* background: linear-gradient(-45deg, #7732cf, #d100bd, #7732cf, #d100bd);
+    background-size: 600% 600%;
+    animation: gradient 6s ease infinite; */
+    /* color: var(--h1-color); */
     color: var(--bg-color);
     width: 10rem;
     height: 2.25rem;
     border: none;
-    border-radius: 2px;
-    outline: none;
+    border-radius: 0.4rem;
     cursor: pointer;
-  }
-  
-  input:hover, textarea:hover, button:hover {
+    transition: all 0.3s ease;
+}
+
+input:hover,
+textarea:hover{
     opacity: 0.5;
-  }
-  
-  button:active {
+}
+
+button:hover {
+    background: #C600D0;
+    color: var(--h1-color);
+}
+
+button:active {
     opacity: 0.8;
-  }
-  
-  /* Toggle Switch */
-  
-  .theme-switch-wrapper {
+}
+
+/* Toggle Switch */
+
+.theme-switch-wrapper {
     display: flex;
     align-items: center;
     text-align: center;
@@ -141,24 +171,24 @@
     position: absolute;
     top: 0.5rem;
     right: 0;
-  }
-  
-  .description {
-      margin-left: 1.25rem;
-    }
-  
-  .theme-switch {
+}
+
+.description {
+    margin-left: 1.25rem;
+}
+
+.theme-switch {
     display: inline-block;
     height: 34px;
     position: relative;
     width: 60px;
-  }
-  
-  .theme-switch input {
-    display:none;
-  }
-  
-  .slider {
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
     background-color: #ccc;
     bottom: 0;
     cursor: pointer;
@@ -166,10 +196,10 @@
     position: absolute;
     right: 0;
     top: 0;
-    transition: .4s;
-  }
-  
-  .slider:before {
+    transition: 0.4s;
+}
+
+.slider:before {
     background-color: #fff;
     bottom: 0.25rem;
     content: "";
@@ -177,91 +207,66 @@
     height: 26px;
     left: 0.25rem;
     position: absolute;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
+    transition: 0.4s;
+}
+
+input:checked+.slider {
     background-color: var(--button-color);
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     transform: translateX(26px);
-  }
-  
-  .slider.round {
+}
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-  
-  #error, #success-msg {
+}
+
+#error,
+#success-msg {
     width: 40vw;
     margin: 0.125rem 0;
     font-size: 0.75rem;
     text-transform: uppercase;
-    font-family: 'Jost';
+    font-family: "Jost";
     color: var(--secondary-color);
+}
+
+#success-msg {
+    transition-delay: 3s;
+}
+
+@media (min-width: 320px) and (max-width: 1024px){
+
+    .contact-container{
+        display: block;
+        overflow: hidden;
+    }
+    .left-col{
+        height: fit-content;
+        width: 100%;
     }
 
-  
-    #success-msg {
-    transition-delay: 3s;
+    .logo{
+        display: block;
     }
-  
-  @media only screen and (max-width: 950px) {
-    .logo {
-      width: 8rem;
+
+    img{
+        display: none;
     }
-    h1 {
-      font-size: 1.75rem;
+    .right-col{
+        width: 100%;
+        padding: 2rem 1.5rem;
     }
-    p {
-      font-size: 0.7rem;
+    p,
+    input,
+    textarea,
+    label {
+        width: 85vw;
+        display: block;
     }
-    input, textarea, button {
-      font-size: 0.65rem;
-    }
-    .description {
-      font-size: 0.3rem;
-      margin-left: 0.4rem;
-    }
-    button {
-      width: 7rem;
-    }
-    .theme-switch-wrapper {
-      width: 120px;
-    }
-    .theme-switch {
-    height: 28px;
-    width: 50px;
-  }
-  
-  .theme-switch input {
-    display:none;
-  }
-  
-  .slider:before {
-    background-color: #fff;
-    bottom: 0.25rem;
-    content: "";
-    width: 20px;
-    height: 20px;
-    left: 0.25rem;
-    position: absolute;
-    transition: .4s;
-  }
-    input:checked + .slider:before {
-    transform: translateX(16px);
-  }
-  
-  .slider.round {
-    border-radius: 15px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-  
-  }
+}
