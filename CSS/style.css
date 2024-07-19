@@ -872,12 +872,10 @@ section > .section-headers h1{
 
 .social a{
     display: flex;
-    text-align: center;
     text-decoration: none;
     width: 90%;
     padding: 0rem 1rem 0rem 0rem;
     color: var(--white);
-    /* background-color: aliceblue; */
 }   
 
 .social div:nth-child(3),
@@ -892,28 +890,26 @@ section > .section-headers h1{
 
 .bi{
     display: block;
-    /* margin: 1rem; */
-    font-size: 2.5rem;
+    font-size: 2.6rem;
 }
 
 .social-txt{
     margin: 1.25rem 0rem 0rem 1rem;
-    position: relative;
-    align-items: center;
+    align-items: left;
     font-size: 1rem;
-    line-height: 1px;
 }
 
 .social-txt h3{
     border: 0px;
     text-decoration: none;
     line-height: 0;
-    /* font-size: 0.8rem; */
+    margin: 5px 0;
 }
 
 .social-txt p{
     line-height: 0;
     font-size: 0.8rem;
+    margin: 0.8rem 0;
 }
 
 /* ---------------- ---------- ---------------- */
