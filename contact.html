@@ -17,47 +17,29 @@
             </a>
         </div>
         <div class="right-col">
-            <!-- <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="slider round"></div>
-                </label>
-                <div class="description">Dark Mode</div>
-            </div> -->
             <h1>Contact us</h1>
             <p>Fill out the form below and we will get back to you as soon as possible.</p>
-
-            <!-- <form id="contact-form" method="post">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-                <label for="message">Message</label>
-                <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
-                <button type="submit" id="submit" name="submit">SUBMIT</button>
-            </form> -->
-            
-
             <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
                 <!-- Replace with your Access Key -->
                 <input type="hidden" name="access_key" value="ff102f07-3733-4276-bde6-c43b5c4ecb4d">
             
                 <!-- Form Inputs. Each input must have a name="" attribute -->
-                <input type="text" name="name" required>
-                <input type="email" name="email" required>
-                <textarea name="message" required></textarea>
+                <label for="name">Full name</label>
+                <input type="text" name="name" placeholder="Your Full Name" required>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <label for="message">Message</label>
+                <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
             
                 <!-- Honeypot Spam Protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             
                 <!-- Custom Confirmation / Success Page -->
                 <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-            
                 <button type="submit">Submit Form</button>
             
             </form>
-
 
             <div id="error"></div>
             <div id="success-msg"></div>

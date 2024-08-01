@@ -1,11 +1,3 @@
-/* :root {
-    --primary-color: #010712;
-    --secondary-color: #818386;
-    --bg-color: #fcfdfd;
-    --button-color: #c600d0;
-    --h1-color: #3f444c;
-} */
-
 :root {
     --primary-color: #fcfdfd;
     --secondary-color: #818386;
@@ -82,7 +74,7 @@ p {
 
 label,
 .description {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     font-size: 0.625rem;
 }
@@ -101,8 +93,12 @@ label {
     display: block;
 }
 
+textarea::placeholder,
+input::placeholder{
+    opacity: 0.5;
+}
+
 p,
-placeholder,
 input,
 textarea {
     font-family: "Helvetica Neue", sans-serif;
